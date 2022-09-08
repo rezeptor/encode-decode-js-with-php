@@ -1,0 +1,11 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+<script>
+    $(function() {
+        let key = CryptoJS.enc.Utf8.parse("vhj39s1321fmmberi9ph651u23ske4x7");
+        let iv = CryptoJS.enc.Utf8.parse("69gr0jn5iah702z2");
+        let encrypted = CryptoJS.AES.encrypt("1196193", key, { iv: iv });
+        console.log(encrypted.toString());
+
+        // Output: tX3vMGrgQPU/YisfXF3Ozg==
+    });
+</script>
